@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+   		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+   		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+        <link rel="bookmark"  type="image/x-icon"  href="/img/Y_logo.png"/>
+	    <link rel="shortcut icon" href="/img/Y_logo.png">
+		<title>QAQ</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+	    <style>
+            body{
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        </style>
+    </head>
+	<body background="img/404page.jpg">
+			<!--顶部-->
+			<nav class="navbar navbar-default navbar-fixed-top">
+				  <div class="container-fluid wrap">
+				    <!-- Brand and toggle get grouped for better mobile display -->
+				    <div class="navbar-header">
+				      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				      </button>
+				      <!--logo-->
+				      <a class="navbar-brand" href="#">
+				      	<img src="img/logo_404.png" alt=""/>
+				      </a>
+				    </div>
+				    <!-- Collect the nav links, forms, and other content for toggling -->
+				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				      <!--<ul class="language navbar-right">
+				        <li><a href="#" class="active">中</a></li>
+				        <li>|</li>
+				        <li><a href="#">EN</a></li>
+				      </ul>-->
+				      <ul class="nav navbar-nav main-nav  navbar-right">
+				        <li class="active"><a href="index.html">您要找的页面被枫吃掉啦（枫：喵喵喵？）</a></li>
+				      </ul>
+				    </div><!-- /.navbar-collapse -->
+				  </div><!-- /.container-fluid -->
+				</nav>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <div class="footer">
+            Powerd By: YPC
+            <br /><br />
+            Made With: Brackets
+        </div>
+	</body>
+	<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="js/jquery.SuperSlide.2.1.js"></script>
+	
+	<script src="js/numberAdd.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script type="text/javascript" src="js/wow.min.js"></script>
+	
+	<script type="text/javascript">
+		//多图轮播
+		jQuery(".picScroll").slide({ mainCell:"ul", effect:"leftLoop", vis:6, scroll:1,  autoPage:true, switchLoad:"_src",autoPlay:true});
+	   	
+	    //banner轮播
+	    var swiper = new Swiper('.swiper-container', {
+	      spaceBetween: 30,
+//	      effect: 'fade',
+		  loop: true,
+	      pagination: {
+	        el: '.swiper-pagination',
+	        clickable: true,
+	      },
+	      navigation: {
+	        nextEl: '.swiper-button-next',
+	        prevEl: '.swiper-button-prev',
+	      },
+	    });
+	    
+	    //鼠标滚动特效
+	   	new WOW().init();
+	</script>
+</html>
