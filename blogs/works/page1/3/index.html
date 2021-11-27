@@ -1,104 +1,8 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8" />
-   		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-   		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-        <link rel="bookmark"  type="image/x-icon"  href="/img/Y_logo.png"/>
-	    <link rel="shortcut icon" href="/img/Y_logo.png">
-        <title>二分图匹配讲解</title>
-		<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css"/>
-		<link rel="stylesheet" type="text/css" href="/css/swiper.min.css"/>
-		<link rel="stylesheet" type="text/css" href="/css/style.css"/>
-		<link rel="stylesheet" type="text/css" href="/css/animate.min.css">
-        <link rel="stylesheet" href="/live2d/css/live2d.css" />
-	</head>
-	<body>
-			<!--顶部-->
-			<nav class="navbar navbar-default navbar-fixed-top">
-				  <div class="container-fluid wrap">
-				    <!-- Brand and toggle get grouped for better mobile display -->
-				    <div class="navbar-header">
-				      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-				        <span class="sr-only">Toggle navigation</span>
-				        <span class="icon-bar"></span>
-				        <span class="icon-bar"></span>
-				        <span class="icon-bar"></span>
-				      </button>
-				      <!--logo-->
-				      <a class="navbar-brand" href="#">
-				      	<img src="/img/logo.png" alt=""/>
-				      </a>
-				    </div>
-				    <!-- Collect the nav links, forms, and other content for toggling -->
-				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				      <!--<ul class="language navbar-right">
-				        <li><a href="#" class="active">中</a></li>
-				        <li>|</li>
-				        <li><a href="#">EN</a></li>
-				      </ul>-->
-				      <ul class="nav navbar-nav main-nav  navbar-right">
-				        <li><a href="/index.html">首页</a></li>
-				        <li><a href="/blogs/1.html">返回博客列表</a></li>
-				        <li><a href="/blogs/works/page1/4/index.html">下一篇博客</a></li>
-                        <li><a href="/blogs/works/page1/2/index.html">上一篇博客</a></li>
-                        <li><a href="no_style.html">简洁版</a></li>
-                      </ul>
-				    </div><!-- /.navbar-collapse -->
-				  </div><!-- /.container-fluid -->
-				</nav>
-			<!-- Swiper -->
-        <div id="landlord">
-            <div class="message" style="opacity:0"></div>
-            <canvas id="live2d" width="250" height="280" class="live2d"></canvas>
-            <div class="hide-button">隐藏</div>
-        </div>
-        <script type="text/javascript" src="/live2d/js/jquery.min.js"></script>
-        <script type="text/javascript">
-            var message_Path = '/live2d/'
-            var home_Path = 'https://ypcypc.github.io/'
-        </script>
-        <script type="text/javascript" src="/live2d/js/live2d.js"></script>
-        <script type="text/javascript" src="/live2d/js/message.js"></script>
-        <script type="text/javascript">loadlive2d("live2d", "/live2d/model/model.json");</script>
-	</body>
-	<script src="/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-	<script src="/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
-	<script type="text/javascript" src="/js/jquery.SuperSlide.2.1.js"></script>
-	
-	<script src="/js/numberAdd.js" type="text/javascript" charset="utf-8"></script>
-	<script src="/js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
-	
-	<script type="text/javascript" src="/js/wow.min.js"></script>
-	
-	<script type="text/javascript">
-		//多图轮播
-		jQuery(".picScroll").slide({ mainCell:"ul", effect:"leftLoop", vis:6, scroll:1,  autoPage:true, switchLoad:"_src",autoPlay:true});
-	   	
-	    //banner轮播
-	    var swiper = new Swiper('.swiper-container', {
-	      spaceBetween: 30,
-//	      effect: 'fade',
-		  loop: true,
-	      pagination: {
-	        el: '.swiper-pagination',
-	        clickable: true,
-	      },
-	      navigation: {
-	        nextEl: '.swiper-button-next',
-	        prevEl: '.swiper-button-prev',
-	      },
-	    });
-	    
-	    //鼠标滚动特效
-	   	new WOW().init();
-	</script>
-</html>
 <!doctype html>
 <html>
 <head>
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}#write, body { height: auto; }
+<title>二分图匹配讲解</title><link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}#write, body { height: auto; }
 #write, #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write ol, #write p, #write ul { position: relative; }
 #write, #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
 #write, pre { white-space: pre-wrap; }
@@ -399,22 +303,8 @@ header, .context-menu, .megamenu-content, footer { font-family: "Segoe UI", Aria
 
  .typora-export p, .typora-export .footnote-line {white-space: normal;} 
 </style>
-<style type="text/css">
-    body:before {
-      content: ' ';
-      position: fixed;
-      top: 0;
-      background: url('background.jpg') center 0 no-repeat;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background-size: cover; 
-      opacity: 0.6;
-    }
-</style>
 </head>
 <body class='typora-export os-windows' >
-<br />
 <div  id='write'  class = 'is-node'><p>&nbsp;</p><h1><a name='header-n8' class='md-header-anchor '></a>【二分图最大匹配】一篇富有亲♂和力的详细的讲解</h1><hr /><h2><a name='header-n10' class='md-header-anchor '></a>0.前言</h2><p>我一般来讲是不会怎么去写关于算法类的总结或者说是讲解的，原因么，我也不知道……可能嫌讲解时候还要画图比较麻烦吧，呵呵^_^。这篇讲解算是我在算法类的第一篇，讲得不好的地方，欢迎直接在我的博客下方直接指出（反正我上博客的时间不多<em>[滑稽]</em>）。为什么要写这篇讲解呢，因为我在研究这个二分图最大匹配问题的时候，好像研究了一下午，但是，我感觉我至少有90%的时间是在纠结于这个二分图到底是个啥玩意儿，像百度百科之类的学术性太强的讲解我表示呵呵（不过有可能这跟我是个蒟蒻有点关系），而又有大部分网友写的博客是直接调用了百度百科上对于二分图的解释，所以我就只能自己去摸索，摸索到最后，我才发现这玩意儿原来这么**容易。废话不多说了（好像已经说了蛮多了），开讲。</p><hr /><h2><a name='header-n14' class='md-header-anchor '></a>1.社会7班的故事（上）</h2><h3><a name='header-n15' class='md-header-anchor '></a>（这标题是不是让你有点懵？）</h3><p>在A市的B学校中，C年级7班是个十分社会的班级，具体表现在把小猪佩奇纹在身上之类的……7班一共有10个男生，分别是1,2,3,4,5,6,7,8,9,10，这十个男生看上了五个女生，所以这十个男生成天看对方不顺眼，突然有一天，1拉拢了2,3,4,5，他们想要组成一个群体，把其他的男生都教训一遍，我们先来说明一下：
 假设X男生和Y男生相互有敌意，可以用以下几种方式表现：
 （1）：

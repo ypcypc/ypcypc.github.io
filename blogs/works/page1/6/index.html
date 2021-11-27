@@ -1,104 +1,8 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8" />
-   		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-   		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-        <link rel="bookmark"  type="image/x-icon"  href="/img/Y_logo.png"/>
-	    <link rel="shortcut icon" href="/img/Y_logo.png">
-        <title>PetYa病毒行为分析</title>
-		<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css"/>
-		<link rel="stylesheet" type="text/css" href="/css/swiper.min.css"/>
-		<link rel="stylesheet" type="text/css" href="/css/style.css"/>
-		<link rel="stylesheet" type="text/css" href="/css/animate.min.css">
-        <link rel="stylesheet" href="/live2d/css/live2d.css" />
-	</head>
-	<body>
-			<!--顶部-->
-			<nav class="navbar navbar-default navbar-fixed-top">
-				  <div class="container-fluid wrap">
-				    <!-- Brand and toggle get grouped for better mobile display -->
-				    <div class="navbar-header">
-				      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-				        <span class="sr-only">Toggle navigation</span>
-				        <span class="icon-bar"></span>
-				        <span class="icon-bar"></span>
-				        <span class="icon-bar"></span>
-				      </button>
-				      <!--logo-->
-				      <a class="navbar-brand" href="#">
-				      	<img src="/img/logo.png" alt=""/>
-				      </a>
-				    </div>
-				    <!-- Collect the nav links, forms, and other content for toggling -->
-				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				      <!--<ul class="language navbar-right">
-				        <li><a href="#" class="active">中</a></li>
-				        <li>|</li>
-				        <li><a href="#">EN</a></li>
-				      </ul>-->
-				      <ul class="nav navbar-nav main-nav  navbar-right">
-				        <li><a href="/index.html">首页</a></li>
-				        <li><a href="/blogs/1.html">返回博客列表</a></li>
-				        <li><a href="/blogs/works/page1/7/index.html">下一篇博客</a></li>
-                        <li><a href="/blogs/works/page1/5/index.html">上一篇博客</a></li>
-                        <li><a href="no_style.html">简洁版</a></li>
-                      </ul>
-				    </div><!-- /.navbar-collapse -->
-				  </div><!-- /.container-fluid -->
-				</nav>
-			<!-- Swiper -->
-        <div id="landlord">
-            <div class="message" style="opacity:0"></div>
-            <canvas id="live2d" width="250" height="280" class="live2d"></canvas>
-            <div class="hide-button">隐藏</div>
-        </div>
-        <script type="text/javascript" src="/live2d/js/jquery.min.js"></script>
-        <script type="text/javascript">
-            var message_Path = '/live2d/'
-            var home_Path = 'https://ypcypc.github.io/'
-        </script>
-        <script type="text/javascript" src="/live2d/js/live2d.js"></script>
-        <script type="text/javascript" src="/live2d/js/message.js"></script>
-        <script type="text/javascript">loadlive2d("live2d", "/live2d/model/model.json");</script>
-	</body>
-	<script src="/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-	<script src="/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
-	<script type="text/javascript" src="/js/jquery.SuperSlide.2.1.js"></script>
-	
-	<script src="/js/numberAdd.js" type="text/javascript" charset="utf-8"></script>
-	<script src="/js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
-	
-	<script type="text/javascript" src="/js/wow.min.js"></script>
-	
-	<script type="text/javascript">
-		//多图轮播
-		jQuery(".picScroll").slide({ mainCell:"ul", effect:"leftLoop", vis:6, scroll:1,  autoPage:true, switchLoad:"_src",autoPlay:true});
-	   	
-	    //banner轮播
-	    var swiper = new Swiper('.swiper-container', {
-	      spaceBetween: 30,
-//	      effect: 'fade',
-		  loop: true,
-	      pagination: {
-	        el: '.swiper-pagination',
-	        clickable: true,
-	      },
-	      navigation: {
-	        nextEl: '.swiper-button-next',
-	        prevEl: '.swiper-button-prev',
-	      },
-	    });
-	    
-	    //鼠标滚动特效
-	   	new WOW().init();
-	</script>
-</html>
 <!doctype html>
 <html>
 <head>
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}#write, body { height: auto; }
+<title>Petya病毒行为分析</title><link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}#write, body { height: auto; }
 #write, #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write ol, #write p, #write ul { position: relative; }
 #write, #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
 #write, pre { white-space: pre-wrap; }
@@ -316,24 +220,10 @@ header, .context-menu, .megamenu-content, footer { font-family: "Segoe UI", Aria
 
 
 
- .typora-export p, .typora-export .footnote-line {white-space: normal;}
-</style>
-<style type="text/css">
-    body:before {
-      content: ' ';
-      position: fixed;
-      top: 0;
-      background: url('background.jpg') center 0 no-repeat;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background-size: cover; 
-      opacity: 0.6;
-    }
+ .typora-export p, .typora-export .footnote-line {white-space: normal;} 
 </style>
 </head>
 <body class='typora-export os-windows' >
-<br /><br /><br /><br />
 <div  id='write'  class = 'is-node'><h1><a name='header-n0' class='md-header-anchor '></a>Petya病毒行为分析</h1><h2><a name='header-n2' class='md-header-anchor '></a>0x00 写在前面</h2><p>本文转自<a href='https://www.52pojie.cn/thread-622400-1-1.html' target='_blank' class='url'>https://www.52pojie.cn/thread-622400-1-1.html</a></p><h2><a name='header-n5' class='md-header-anchor '></a>0x01 PetYa行为预览</h2><p>1、进程自身提权、检测杀软 </p><p>2、拷贝自身代码到堆内存执行，并卸载自身主模块，躲避内存扫描</p><p>3、加密MBR引导扇区数据，篡改MBR代码 </p><p>4、创建重启计划任务 </p><p>5、释放密码抓取以及远程命令执行工具</p><p>6、通过多种方式进行传播自身以及远程执行</p><p>7、加密磁盘指定格式的文件数据，只加密固定磁盘，不对可移动存储设备加密，通过生成AES128密钥加密文件数据、然后用样本内置的RSA公钥加密AES密钥</p><p>8、系统重启后加密NTFS文件系统的MFT表<br/></p><h2><a name='header-n22' class='md-header-anchor '></a>0x02 PetYa攻击流程分析</h2><p><img src='http://it.rising.com.cn/d/file/it/dongtai/20170629/image3.png' alt='' referrerPolicy='no-referrer' /></p><h2><a name='header-n25' class='md-header-anchor '></a>0x03 PetYa核心加密算法简析</h2><p><img src='http://it.rising.com.cn/d/file/it/dongtai/20170629/image14.png' alt='' referrerPolicy='no-referrer' /></p><p>&nbsp;</p><p><img src='http://it.rising.com.cn/d/file/it/dongtai/20170629/image15.png' alt='' referrerPolicy='no-referrer' /></p><p>&nbsp;</p><h2><a name='header-n34' class='md-header-anchor '></a>0x04 PetYa传播方式简析</h2><p>PetYa病毒主要通过<em>EternalBlue</em>（<em>永恒之蓝</em>）和<em>EternalRomance</em>（<em>永恒浪漫</em>）漏洞在内网横向渗透或者通过邮件发送病毒。一下为病毒传播方式代码：</p><p>1.利用远程共享传播 </p><p>&nbsp;</p><p><img src='http://it.rising.com.cn/d/file/it/dongtai/20170629/image16.png' alt='' referrerPolicy='no-referrer' /></p><p>&nbsp;</p><p>2.利用局域网传播</p><p>&nbsp;</p><p><img src='http://it.rising.com.cn/d/file/it/dongtai/20170629/image17.png' alt='' referrerPolicy='no-referrer' /></p><p>&nbsp;</p><h2><a name='header-n53' class='md-header-anchor '></a>0x05 Petya解密文件过程</h2><p>这个我也看不懂……</p><p>反正病毒根据系统是32位还是64位从资源中释放不同的版本的密码提取软件。</p><p><img src='http://it.rising.com.cn/d/file/it/dongtai/20170629/image19.png' alt='' referrerPolicy='no-referrer' /></p><p>&nbsp;</p><p>然后释放并运行资源中的密码提取软件，然后创建一个<em>线程</em>使用<em>管道</em>与密码提取程序<strong>通信</strong>。 </p><p><img src='http://it.rising.com.cn/d/file/it/dongtai/20170629/image20.png' alt='' referrerPolicy='no-referrer' /></p><p>&nbsp;</p><h2><a name='header-n68' class='md-header-anchor '></a>0x06 病毒样本下载</h2><p>这里提供病毒样本下载，请<strong><em>小心</em></strong>食用……</p><p><a href='https://pan.baidu.com/s/17tWyHEhjP0h-H_VztUzamw' target='_blank' class='url'>https://pan.baidu.com/s/17tWyHEhjP0h-H_VztUzamw</a></p></div>
 </body>
 </html>

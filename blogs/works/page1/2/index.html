@@ -1,104 +1,8 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8" />
-   		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-   		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-        <link rel="bookmark"  type="image/x-icon"  href="/img/Y_logo.png"/>
-	    <link rel="shortcut icon" href="/img/Y_logo.png">
-        <title>百度网盘高速下载</title>
-		<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css"/>
-		<link rel="stylesheet" type="text/css" href="/css/swiper.min.css"/>
-		<link rel="stylesheet" type="text/css" href="/css/style.css"/>
-		<link rel="stylesheet" type="text/css" href="/css/animate.min.css">
-        <link rel="stylesheet" href="/live2d/css/live2d.css" />
-	</head>
-	<body>
-			<!--顶部-->
-			<nav class="navbar navbar-default navbar-fixed-top">
-				  <div class="container-fluid wrap">
-				    <!-- Brand and toggle get grouped for better mobile display -->
-				    <div class="navbar-header">
-				      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-				        <span class="sr-only">Toggle navigation</span>
-				        <span class="icon-bar"></span>
-				        <span class="icon-bar"></span>
-				        <span class="icon-bar"></span>
-				      </button>
-				      <!--logo-->
-				      <a class="navbar-brand" href="#">
-				      	<img src="/img/logo.png" alt=""/>
-				      </a>
-				    </div>
-				    <!-- Collect the nav links, forms, and other content for toggling -->
-				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				      <!--<ul class="language navbar-right">
-				        <li><a href="#" class="active">中</a></li>
-				        <li>|</li>
-				        <li><a href="#">EN</a></li>
-				      </ul>-->
-				      <ul class="nav navbar-nav main-nav  navbar-right">
-				        <li><a href="/index.html">首页</a></li>
-				        <li><a href="/blogs/1.html">返回博客列表</a></li>
-				        <li><a href="/blogs/works/page1/3/index.html">下一篇博客</a></li>
-                        <li><a href="/blogs/works/page1/1/index.html">上一篇博客</a></li>
-                        <li><a href="no_style.html">简洁版</a></li>
-                      </ul>
-				    </div><!-- /.navbar-collapse -->
-				  </div><!-- /.container-fluid -->
-				</nav>
-			<!-- Swiper -->
-        <div id="landlord">
-            <div class="message" style="opacity:0"></div>
-            <canvas id="live2d" width="250" height="280" class="live2d"></canvas>
-            <div class="hide-button">隐藏</div>
-        </div>
-        <script type="text/javascript" src="/live2d/js/jquery.min.js"></script>
-        <script type="text/javascript">
-            var message_Path = '/live2d/'
-            var home_Path = 'https://ypcypc.github.io/'
-        </script>
-        <script type="text/javascript" src="/live2d/js/live2d.js"></script>
-        <script type="text/javascript" src="/live2d/js/message.js"></script>
-        <script type="text/javascript">loadlive2d("live2d", "/live2d/model/model.json");</script>
-	</body>
-	<script src="/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-	<script src="/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
-	<script type="text/javascript" src="/js/jquery.SuperSlide.2.1.js"></script>
-	
-	<script src="/js/numberAdd.js" type="text/javascript" charset="utf-8"></script>
-	<script src="/js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
-	
-	<script type="text/javascript" src="/js/wow.min.js"></script>
-	
-	<script type="text/javascript">
-		//多图轮播
-		jQuery(".picScroll").slide({ mainCell:"ul", effect:"leftLoop", vis:6, scroll:1,  autoPage:true, switchLoad:"_src",autoPlay:true});
-	   	
-	    //banner轮播
-	    var swiper = new Swiper('.swiper-container', {
-	      spaceBetween: 30,
-//	      effect: 'fade',
-		  loop: true,
-	      pagination: {
-	        el: '.swiper-pagination',
-	        clickable: true,
-	      },
-	      navigation: {
-	        nextEl: '.swiper-button-next',
-	        prevEl: '.swiper-button-prev',
-	      },
-	    });
-	    
-	    //鼠标滚动特效
-	   	new WOW().init();
-	</script>
-</html>
 <!doctype html>
 <html>
 <head>
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
-<title>Welcome To YPC's Blogs</title><link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}#write, body { height: auto; }
+<title>百度网盘高速下载</title><link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}#write, body { height: auto; }
 #write, #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write ol, #write p, #write ul { position: relative; }
 #write, #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
 #write, pre { white-space: pre-wrap; }
@@ -318,23 +222,9 @@ header, .context-menu, .megamenu-content, footer { font-family: "Segoe UI", Aria
 
  .typora-export p, .typora-export .footnote-line {white-space: normal;} 
 </style>
-<style type="text/css">
-    body:before {
-      content: ' ';
-      position: fixed;
-      top: 0;
-      background: url('background.jpg') center 0 no-repeat;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background-size: cover;
-      opacity: 0.6;
-    }
-</style>
 </head>
 <body class='typora-export os-windows' >
-<br />
-<div  id='write'  class = 'is-node'><p>&nbsp;</p><h1><a name='header-n61' class='md-header-anchor '></a>突破百度网盘各种限速，高速下载百度网盘各种资源</h1><hr /><h3><a name='header-n63' class='md-header-anchor '></a>注：本文所有提及的资源、软件都会在本人百度网盘中，如果不想上网找资源的朋友可以直接到我的网盘内下载整合资源，本文文末将会给出链接</h3><h2><a name='header-n64' class='md-header-anchor '></a>前言</h2><p> 当今百度上是各种充钱各种特权，感觉没钱你就根本无法立足于百度（拜金的度娘-_-），搞得一些没钱的娃是痛苦万分，比如说我……其中网友们比较关注的百度网盘也被理所应当的设置了各种奇葩的限制，比如：非VIP用户无法在线解压（这个我理解，因为如果大家都在线解压一些大文件的话，云端主机可能受不了）、非VIP用户的最大网盘内存好像是不能超过1023GB（当然，这个我一样能理解，毕竟这些空间可能都是需要百度公司的云端主机腾出来的，人家又不是搞慈善的，白白给你腾出来这一份空间……），还有很多限制，其中，最令人发指的是<strong>下载限速机制</strong>，呵呵，这我就没话讲了，每当我用下载速度高达40MB/s（下载速度以360安全浏览器下载网站<strong>Ubantu</strong>上的系统镜像的下载速度为准，为什么？没有为什么）的电脑去下载百度云上的文件的时候，看到那<em>惊人</em>的70~100KB/s下载速度，我有种骂街的冲动……好了，也就说到这里吧，开始教程。</p><p></p><hr /><h2><a name='header-n70' class='md-header-anchor '></a>方法1</h2><p>使用百度网盘下载神器，超级良心的良心软件<strong>PanDownload</strong>进行下载，当然这个软件目前仍然坚挺，至少现在还是可以用的，有兴趣的小伙伴们可以到网上搜一下，或者<a href='http://pandownload.com/'>点此传送至官网</a>，这里就不再赘述了。</p><h2><a name='header-n73' class='md-header-anchor '></a>方法2</h2><p>这个方法是本文主要讲解的方法（这里我得下载软件将不会使用IDM，IDM用怕了的朋友们可以放心的看下去）
+<div  id='write'  class = 'is-node'><p>&nbsp;</p><h1><a name='header-n61' class='md-header-anchor '></a>【最新】【破解】【百度网盘】突破百度网盘各种限速，高速下载百度网盘各种资源</h1><hr /><h3><a name='header-n63' class='md-header-anchor '></a>注：本文所有提及的资源、软件都会在本人百度网盘中，如果不想上网找资源的朋友可以直接到我的网盘内下载整合资源，本文文末将会给出链接</h3><h2><a name='header-n64' class='md-header-anchor '></a>前言</h2><p> 当今百度上是各种充钱各种特权，感觉没钱你就根本无法立足于百度（拜金的度娘-_-），搞得一些没钱的娃是痛苦万分，比如说我……其中网友们比较关注的百度网盘也被理所应当的设置了各种奇葩的限制，比如：非VIP用户无法在线解压（这个我理解，因为如果大家都在线解压一些大文件的话，云端主机可能受不了）、非VIP用户的最大网盘内存好像是不能超过1023GB（当然，这个我一样能理解，毕竟这些空间可能都是需要百度公司的云端主机腾出来的，人家又不是搞慈善的，白白给你腾出来这一份空间……），还有很多限制，其中，最令人发指的是<strong>下载限速机制</strong>，呵呵，这我就没话讲了，每当我用下载速度高达40MB/s（下载速度以360安全浏览器下载网站<strong>Ubantu</strong>上的系统镜像的下载速度为准，为什么？没有为什么）的电脑去下载百度云上的文件的时候，看到那<em>惊人</em>的70~100KB/s下载速度，我有种骂街的冲动……好了，也就说到这里吧，开始教程。</p><p><img src='https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1519839228350&amp;di=87127c11d0377e1838b997c50a2cf3b7&amp;imgtype=0&amp;src=http%3A%2F%2Fpic.962.net%2Fup%2F2017-11%2F15099399155196333.gif' alt='' referrerPolicy='no-referrer' /></p><hr /><h2><a name='header-n70' class='md-header-anchor '></a>方法1</h2><p>使用百度网盘下载神器，超级良心的良心软件<strong>PanDownload</strong>进行下载，当然这个软件目前仍然坚挺，至少现在还是可以用的，有兴趣的小伙伴们可以到网上搜一下，或者<a href='http://pandownload.com/'>点此传送至官网</a>，这里就不再赘述了。</p><h2><a name='header-n73' class='md-header-anchor '></a>方法2</h2><p>这个方法是本文主要讲解的方法（这里我得下载软件将不会使用IDM，IDM用怕了的朋友们可以放心的看下去）
 ①：下载油猴脚本，油猴脚本一直十分强大，但是可惜的是，这个脚本只支持一部分浏览器，像什么360安全浏览器可能就只能靠边站了（唉），为此我下载了一个浏览器叫做Maxthon（在Maxthon上油猴脚本管理器叫暴力猴），不过呢，其实像Chrome，FireFox等浏览器也都有这种插件提供，油猴脚本可以在GreasyFork上下载，<a href='https://greasyfork.org/zh-CN/'>点我传送至官网</a>，然后各种破解百度网盘的玩意儿就出来了，可谓是一片新天地，其中这些脚本大多数都是通过获得百度网盘的真实下载链接来通过破解的，我个人比较喜欢一个插件：<strong>Ex-百度云盘</strong>。这个插件比较稳定，用起来也很方便，可谓是短小精悍。
 ②：好了，现在我们已经通过油猴脚本获得了某个资源的真实下载链接，那么问题又来了，怎么下载呢？这个问题看起来十分的简单，懂点网络知识的朋友们应该都知道，一般来讲把下载链接输入到浏览器的网页地址框里就可以实现下载。但是我们发现，我*，丧心病狂的百度把下载链接都设置了<strong>速度限制</strong>，你如果直接输入这个下载链接，到头来基本上和在百度网盘里下载速度差不多，约等于没做。于是呢，我们的聪明的网友就开始使用起了IDM，IDM是个神奇的玩意儿，看看这界面，可能是XP时期的产物，现在依然有人在用，可见其的强大。但是当我们下载来了IDM，打开然后使用IDM下载百度云得上的东西的时候，神奇的事情又出现了
 <img src='https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1519838912258&amp;di=c0dee84e3ce09d55008c38a42960824c&amp;imgtype=0&amp;src=http%3A%2F%2Fimg5.duitang.com%2Fuploads%2Fitem%2F201606%2F29%2F20160629102418_yj4QB.jpeg' alt='' referrerPolicy='no-referrer' />

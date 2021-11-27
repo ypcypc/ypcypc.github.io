@@ -2,17 +2,17 @@
     "mouseover": [
         {
             "selector": ".title a",
-            "text": ["要看看 {text} 么？"]
+            "text": ["Interested by {text} ?"]
         },
         {
             "selector": ".searchbox",
-            "text": ["在找什么东西呢，需要帮忙吗？"]
+            "text": ["Looking for something? Need a hand?"]
         }
     ],
     "click": [
         {
             "selector": "#landlord #live2d",
-            "text": ["不要动手动脚的！快把手拿开~~", "真…真的是不知羞耻！","Hentai！", "再摸的话我可要报警了！⌇●﹏●⌇", "110吗，这里有个变态一直在摸我(ó﹏ò｡)"]
+            "text": ["Don't touch me!", "You would regret for this","Hentai！", "I will call the police!⌇●﹏●⌇", "Officer, this man keeps touching me(ó﹏ò｡)"]
         }
     ]
 }
