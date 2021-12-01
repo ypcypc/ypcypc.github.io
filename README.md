@@ -8,4 +8,4 @@
 
 ​		Secondly, I wanna say thanks to all of my visitors, thanks for paying attention to my website.
 
- 		I did spend some time on this website because I want to show my thoughts to those who have same hobby with me, I did a lot of jobs on it including writing HTML and downloading some effects from internet. It might not be that good because it is my second website. According to Jesse Schell, the author of *Art of Game Design*, the first 10 individual projects are commonly not good, so I will feel fine if you think "why he made such a mistake" or "why the website is not as good as I expected".
+​		I did spend some time on this website because I want to show my thoughts to those who have same hobby with me, I did a lot of jobs on it including writing HTML and downloading some effects from internet. It might not be that good because it is my second website. According to Jesse Schell, the author of *Art of Game Design*, the first 10 individual projects are commonly not good, so I will feel fine if you think "why he made such a mistake" or "why the website is not as good as I expected".
